@@ -7,12 +7,6 @@
 // @match        http://rd2gerrit01.siliconmotion.com.tw
 // @grant        none
 // ==/UserScript==
-/*
-Change List
-[S0522A]
-1. Add project link
-2. Add ATP_SM2259_B16A, MX500_B27A, KC600, FRAMPTON, FRAMPTON_2, BlackMore
-*/
 
 (function() {
     'use strict';
