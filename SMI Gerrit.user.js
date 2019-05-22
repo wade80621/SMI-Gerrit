@@ -36,7 +36,7 @@
 /*==================================================================
 Reference Code
 http://bigsec.net/b52/greasemonkey/
-/*
+//
 var logo = document.createElement("div");
 logo.innerHTML = '<div style="margin: 0 auto 0 auto; ' +
     'border-bottom: 1px solid #000000; margin-bottom: 5px; ' +
@@ -45,7 +45,7 @@ logo.innerHTML = '<div style="margin: 0 auto 0 auto; ' +
     'My name is wade' +
     '</p></div>';
 document.body.insertBefore(logo, document.body.firstChild);
-*/
+//
 
 ==================================================================*/
 
