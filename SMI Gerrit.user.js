@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         SMI Gerrit
-// @namespace    http://rd2gerrit01.siliconmotion.com.tw/
+// @namespace    https://github.com/wade80621/SMI-Gerrit
 // @version      S0522A
-// @description  Add project link
+// @description  Optimize SMI Gerrit, add project link for JMS team.
 // @author       Wade.Yeh
 // @match        http://rd2gerrit01.siliconmotion.com.tw
 // @grant        none
+// @updateURL	 https://github.com/wade80621/SMI-Gerrit/raw/master/SMI%20Gerrit.user.js
+// @downloadURL	 https://github.com/wade80621/SMI-Gerrit/raw/master/SMI%20Gerrit.user.js
 // ==/UserScript==
 
 (function() {
