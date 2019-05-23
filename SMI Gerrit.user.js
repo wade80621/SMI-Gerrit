@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      S0523A
+// @version      S0523B
 // @description  Optimize SMI Gerrit, add project link for JMS team.
 // @author       Wade.Yeh
 // @match        http://rd2gerrit01.siliconmotion.com.tw
@@ -12,7 +12,7 @@
 
 (function() {
     'use strict';
-
+    // Add project link before id: gerrit_body and after id: gerrit_header
     var targetElementId;
     var newElement;
     targetElementId = document.getElementById('gerrit_body');
@@ -25,7 +25,7 @@
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:master" role="menuitem">MX500_B27A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:KC600" role="menuitem">KC600</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
+        '<a class="menuItem" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
@@ -47,8 +47,3 @@ document.body.insertBefore(logo, document.body.firstChild);
 //
 
 ==================================================================*/
-
-
-
-
-
