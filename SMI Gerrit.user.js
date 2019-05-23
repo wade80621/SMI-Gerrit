@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      S0522A
+// @version      S0523A
 // @description  Optimize SMI Gerrit, add project link for JMS team.
 // @author       Wade.Yeh
 // @match        http://rd2gerrit01.siliconmotion.com.tw
@@ -15,19 +15,18 @@
 
     var targetElementId;
     var newElement;
-    //targetElementId = document.getElementById('gerrit_topmenu');
     targetElementId = document.getElementById('gerrit_body');
     if (targetElementId) {
         newElement = document.createElement("div");
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
-        '<b style="margin: 2px 0 1px 0;">Project Link</b>'+
+        '<b style="margin: 2px 0 1px 0;">Project Link: </b>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:ATP_SM2259_B16A" role="menuitem">ATP_SM2259_B16A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:master" role="menuitem">MX500_B27A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:KC600" role="menuitem">KC600</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
+        //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
     }
