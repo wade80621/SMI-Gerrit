@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      S0523B
+// @version      [20200505A]
 // @description  Optimize SMI Gerrit, add project link for JMS team.
 // @author       Wade.Yeh
 // @match        http://rd2gerrit01.siliconmotion.com.tw
@@ -24,9 +24,10 @@
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:ATP_SM2259_B16A" role="menuitem">ATP_SM2259_B16A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:master" role="menuitem">MX500_B27A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:KC600" role="menuitem">KC600</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
-        '<a class="menuItem" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
+        //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
+        '<a class="menuItem" href="#/q/project:SM2259_PartialDRAM" role="menuitem">SM2259_PartialDRAM</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
     }
