@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20200505A]
+// @version      [20200527A]
 // @description  Optimize SMI Gerrit, add project link for JMS team.
 // @author       Wade.Yeh
-// @match        http://rd2gerrit01.siliconmotion.com.tw
+// @match        https://rd2gerrit01.siliconmotion.com.tw/
 // @grant        none
 // @updateURL	 https://github.com/wade80621/SMI-Gerrit/raw/master/SMI%20Gerrit.user.js
 // @downloadURL	 https://github.com/wade80621/SMI-Gerrit/raw/master/SMI%20Gerrit.user.js
