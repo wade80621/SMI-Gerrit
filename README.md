@@ -1,5 +1,7 @@
 # SMI-Gerrit
 Optimize SMI Gerrit, add project link for FW3 team.
+[20200922A]
+Add project Kinston_OEM
 [20200724A]
 Sync MX500+Master and MX500+KC600 to MX500
 [20200527A]

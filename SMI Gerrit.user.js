@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20200724A]
+// @version      [20200922A]
 // @description  Optimize SMI Gerrit, add project link for JMS team.
 // @author       Wade.Yeh
 // @match        https://rd2gerrit01.siliconmotion.com.tw/
@@ -27,6 +27,7 @@
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Kinston_OEM" role="menuitem">Kinston_OEM</a>'+
         '<a class="menuItem" href="#/q/project:SM2259_PartialDRAM" role="menuitem">SM2259_PartialDRAM</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
