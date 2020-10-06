@@ -28,7 +28,8 @@
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Kinston_OEM" role="menuitem">Kinston_OEM</a>'+
-        '<a class="menuItem" href="#/q/project:SM2259_PartialDRAM" role="menuitem">SM2259_PartialDRAM</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2259_PartialDRAM" role="menuitem">SM2259_PartialDRAM</a>'+
+        '<a class="menuItem" href="#/q/project:SM2259_PartialDRAM+branch:PartialDram_4TB" role="menuitem">SM2259_PartialDRAM 4T</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
     }
