@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20201021A]
+Modify PartialDram master with "branch:master"
 ### [20201006A]
 Add branch PartialDram_4TB
 ### [20200922A]
