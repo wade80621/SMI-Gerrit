@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20201021A]
+// @version      [20201208A]
 // @description  Optimize SMI Gerrit, add project link for JMS team.
 // @author       Wade.Yeh
 // @match        https://rd2gerrit01.siliconmotion.com.tw/
@@ -21,6 +21,7 @@
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
         '<b style="margin: 2px 0 1px 0;">Project Link: </b>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Debug_Tools" role="menuitem">Debug_Tools</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:ATP_SM2259_B16A" role="menuitem">ATP_SM2259_B16A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A" role="menuitem">MX500_B27A</a>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:KC600" role="menuitem">KC600</a>'+

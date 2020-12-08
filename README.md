@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20201208A]
+Add project Debug_Tools
 ### [20201021A]
 Modify PartialDram master with "branch:master"
 ### [20201006A]
