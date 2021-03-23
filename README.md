@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20210323A]
+Add project KC600 B47
 ### [20210119A]
 Add project Mitchell
 ### [20201208A]
