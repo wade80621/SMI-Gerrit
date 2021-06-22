@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20210622A]
+// @version      [20210622B]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        https://rd2gerrit01.siliconmotion.com.tw/
@@ -18,6 +18,7 @@
     targetElementId = document.getElementById('gerrit_body');
     if (targetElementId) {
         newElement = document.createElement("div");
+        newElement.id = "wade_proj_sata"
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
         '<b style="margin: 2px 0 1px 0;">Project Link(SATA): </b>'+
@@ -31,6 +32,7 @@
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
         newElement = document.createElement("div");
+        newElement.id = "wade_proj_pcie"
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
 		'<b style="margin: 2px 0 1px 0;">Project Link(PCIe): </b>'+
@@ -45,6 +47,7 @@
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
         newElement = document.createElement("div");
+        newElement.id = "wade_proj_other"
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
         '<b style="margin: 2px 0 1px 0;">Project Link(Other): </b>'+
@@ -68,4 +71,11 @@ logo.innerHTML = '<div style="margin: 0 auto 0 auto; ' +
 document.body.insertBefore(logo, document.body.firstChild);
 //
 
+
+newElement.id = "wade_proj_sata"
+newElement.className = 'linkMenuBar';
+newElement.setAttribute("role", "menubar");
+newElement.roleName="menubar";
+newElement.style.width = "100%";
+newElement.style.height = "100%";
 ==================================================================*/
