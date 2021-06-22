@@ -1,5 +1,8 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20210622A]
+1. Add project SKH_BC901, SM2269XT_ASIC
+2. Update new format
 ### [20210524A]
 1. Add project Mitchell_MTFW
 2. Remove project MX500_B27A

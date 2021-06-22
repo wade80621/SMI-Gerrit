@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20210524A]
+// @version      [20210622A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        https://rd2gerrit01.siliconmotion.com.tw/
@@ -20,21 +20,35 @@
         newElement = document.createElement("div");
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
-        '<b style="margin: 2px 0 1px 0;">Project Link: </b>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Debug_Tools" role="menuitem">Debug_Tools</a>'+
+        '<b style="margin: 2px 0 1px 0;">Project Link(SATA): </b>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:ATP_SM2259_B16A" role="menuitem">ATP_SM2259_B16A</a>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A" role="menuitem">MX500_B27A</a>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:KC600" role="menuitem">KC600</a>'+
-        //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
-        //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Kinston_OEM" role="menuitem">Kinston_OEM</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2259_PartialDRAM+branch:KC600" role="menuitem">KC600 B47</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2259_PartialDRAM+branch:master" role="menuitem">SM2259_PartialDRAM</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2259_PartialDRAM+branch:PartialDram_4TB" role="menuitem">SM2259_PartialDRAM 4T</a>'+
+        '<a class="menuItem" href="#/q/project:SM2259_PartialDRAM+branch:PartialDram_4TB" role="menuitem">SM2259_PartialDRAM 4T</a>'+
+        '</div>';
+        targetElementId.parentNode.insertBefore(newElement, targetElementId);
+        newElement = document.createElement("div");
+        newElement.innerHTML = ''+
+        '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
+		'<b style="margin: 2px 0 1px 0;">Project Link(PCIe): </b>'+
+        //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
+        //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Mitchell" role="menuitem">Mitchell</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Mitchell_MTFW" role="menuitem">Mitchell_MTFW</a>'+
-        '<a class="menuItem" href="#/q/project:SM2269XT_FE" role="menuitem">SM2269XT_FE</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269xt+branch:SKH_BC901" role="menuitem">SKH_BC901</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269XT_FE" role="menuitem">SM2269XT_FE</a>'+
+        '<a class="menuItem" href="#/q/project:XT_ASIC+branch:SM2269" role="menuitem">SM2269XT_ASIC</a>'+
+        '</div>';
+        targetElementId.parentNode.insertBefore(newElement, targetElementId);
+        newElement = document.createElement("div");
+        newElement.innerHTML = ''+
+        '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
+        '<b style="margin: 2px 0 1px 0;">Project Link(Other): </b>'+
+        '<a class="menuItem" href="#/q/project:Debug_Tools" role="menuitem">Debug_Tools</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
     }
