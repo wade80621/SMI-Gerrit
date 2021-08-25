@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20210622B]
+// @version      [20210825A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        https://rd2gerrit01.siliconmotion.com.tw/
@@ -23,10 +23,11 @@
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
         '<b style="margin: 2px 0 1px 0;">Project Link(SATA): </b>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:ATP_SM2259_B16A" role="menuitem">ATP_SM2259_B16A</a>'+
-        //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A" role="menuitem">MX500_B27A</a>'+
-        //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:KC600" role="menuitem">KC600</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:KC600" role="menuitem">KC600</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:&quot;KC600+B17A&quot;" role="menuitem">KC600 B17A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Kinston_OEM" role="menuitem">Kinston_OEM</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2259_PartialDRAM+branch:KC600" role="menuitem">KC600 B47</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2259_PartialDRAM+branch:KC600" role="menuitem">KC600_B47</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A" role="menuitem">MX500_B27A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2259_PartialDRAM+branch:master" role="menuitem">SM2259_PartialDRAM</a>'+
         '<a class="menuItem" href="#/q/project:SM2259_PartialDRAM+branch:PartialDram_4TB" role="menuitem">SM2259_PartialDRAM 4T</a>'+
         '</div>';

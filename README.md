@@ -1,5 +1,8 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20210825A]
+1. Add all KC600 project
+2. Restore MX500_B27A
 ### [20210622B]
 1. Update format
 ### [20210622A]
