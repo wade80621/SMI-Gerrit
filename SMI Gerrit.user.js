@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20210825A]
+// @version      [20210909A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        https://rd2gerrit01.siliconmotion.com.tw/
@@ -27,7 +27,7 @@
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:&quot;KC600+B17A&quot;" role="menuitem">KC600 B17A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Kinston_OEM" role="menuitem">Kinston_OEM</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2259_PartialDRAM+branch:KC600" role="menuitem">KC600_B47</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A" role="menuitem">MX500_B27A</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:master" role="menuitem">MX500_B27A</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2259_PartialDRAM+branch:master" role="menuitem">SM2259_PartialDRAM</a>'+
         '<a class="menuItem" href="#/q/project:SM2259_PartialDRAM+branch:PartialDram_4TB" role="menuitem">SM2259_PartialDRAM 4T</a>'+
         '</div>';
