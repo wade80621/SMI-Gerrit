@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20211222A]
+1. Compatible between "http" and "https"
 ### [20210909A]
 1. Fix the link of MX500_B27A
 ### [20210825A]
