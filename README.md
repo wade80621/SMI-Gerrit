@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20220518B]
+1. Add Micron USB projects "SM2320_B47T"
 ### [20220518A]
 1. Add USB XT projects "SM2320XT" and "SM2320FE"
 ### [20211222A]
