@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20211222A]
+// @version      [20220518A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        http*://rd2gerrit01.siliconmotion.com.tw/
@@ -17,6 +17,7 @@
     var newElement;
     targetElementId = document.getElementById('gerrit_body');
     if (targetElementId) {
+        // SATA
         newElement = document.createElement("div");
         newElement.id = "wade_proj_sata"
         newElement.innerHTML = ''+
@@ -32,11 +33,13 @@
         '<a class="menuItem" href="#/q/project:SM2259_PartialDRAM+branch:PartialDram_4TB" role="menuitem">SM2259_PartialDRAM 4T</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
+		
+        // PCIe
         newElement = document.createElement("div");
         newElement.id = "wade_proj_pcie"
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
-		'<b style="margin: 2px 0 1px 0;">Project Link(PCIe): </b>'+
+        '<b style="margin: 2px 0 1px 0;">Project Link(PCIe): </b>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2</a>'+
@@ -47,6 +50,19 @@
         '<a class="menuItem" href="#/q/project:XT_ASIC+branch:SM2269" role="menuitem">SM2269XT_ASIC</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
+
+        // USB
+        newElement = document.createElement("div");
+        newElement.id = "wade_proj_usb"
+        newElement.innerHTML = ''+
+        '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
+        '<b style="margin: 2px 0 1px 0;">Project Link(USB): </b>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2320XT" role="menuitem">SM2320XT</a>'+
+        '<a class="menuItem" href="#/q/project:SM2320FE" role="menuitem">SM2320FE</a>'+
+        '</div>';
+        targetElementId.parentNode.insertBefore(newElement, targetElementId);
+
+        // Others
         newElement = document.createElement("div");
         newElement.id = "wade_proj_other"
         newElement.innerHTML = ''+

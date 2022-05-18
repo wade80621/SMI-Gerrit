@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20220518A]
+1. Add USB XT projects "SM2320XT" and "SM2320FE"
 ### [20211222A]
 1. Compatible between "http" and "https"
 ### [20210909A]
