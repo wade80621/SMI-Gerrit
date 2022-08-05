@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20220805A]
+1. Modify the link name from "SM2320_B47T" to "SM2320_B47T(HENLEYC)"
 ### [20220518B]
 1. Add Micron USB projects "SM2320_B47T"
 ### [20220518A]
