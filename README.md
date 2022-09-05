@@ -1,5 +1,8 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20220905A]
+1. Add YMTC PCIe Project YMTC PC41Q(2268_X36070)
+2. Rename and optimize the project naming
 ### [20220805A]
 1. Modify the link name from "SM2320_B47T" to "SM2320_B47T(HENLEYC)"
 ### [20220518B]
