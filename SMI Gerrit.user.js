@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20220905A]
+// @version      [202201027A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        http*://rd2gerrit01.siliconmotion.com.tw/
@@ -48,7 +48,7 @@
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269xt+branch:SKH_BC901" role="menuitem">SKH_BC901</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269XT_FE" role="menuitem">SM2269XT_FE</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:XT_ASIC+branch:SM2269" role="menuitem">SM2269XT_ASIC</a>'+
-        '<a class="menuItem"                     href="#/q/project:PC41Q" role="menuitem">YMTC PC41Q(2268_X36070)</a>'+
+        '<a class="menuItem"                     href="#/q/project:PC41Q" role="menuitem">CMT PC41Q(2268_X36070)</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
 
