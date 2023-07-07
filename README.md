@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20230707A]
+1. Add Micron USB projects "Frey3B"
 ### [20230530A]
 1. Add Kingston SATA projects "KC600_BiSC5"
 ### [20221027A]
