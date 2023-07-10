@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20230707A]
+// @version      [20230710A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        http*://rd2gerrit01.siliconmotion.com.tw/
@@ -41,12 +41,12 @@
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
         '<b style="margin: 2px 0 1px 0;">Project Link(PCIe): </b>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:PC41Q" role="menuitem">CMT PC41Q(2268_X36070)</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2268XT_CMT_QLC" role="menuitem">SM2268XT_CMT_QLC</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Mitchell" role="menuitem">Mitchell(2269_N48)</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Mitchell_MTFW" role="menuitem">Mitchell_MTFW</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269xt+branch:SKH_BC901" role="menuitem">SKH_BC901</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269XT_FE" role="menuitem">SM2269XT_FE</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:XT_ASIC+branch:SM2269" role="menuitem">SM2269XT_ASIC</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269XT_FE" role="menuitem">SM2269XT_FE(Marco)</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:XT_ASIC+branch:SM2269" role="menuitem">SM2269XT_ASIC(Marco)</a>'+
         '<a class="menuItem"                     href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2(2263_N28)</a>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
         //'<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
@@ -61,8 +61,8 @@
         '<b style="margin: 2px 0 1px 0;">Project Link(USB): </b>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Frey3B" role="menuitem">Frey3B(2322_N58R)</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2320_B47T" role="menuitem">HenleyC(2320_B47T)</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2320XT" role="menuitem">SM2320XT</a>'+
-        '<a class="menuItem"                     href="#/q/project:SM2320FE" role="menuitem">SM2320FE</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2320XT" role="menuitem">SM2320XT(Marco)</a>'+
+        '<a class="menuItem"                     href="#/q/project:SM2320FE" role="menuitem">SM2320FE(Marco)</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
 

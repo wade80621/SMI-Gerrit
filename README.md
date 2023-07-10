@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for FW3 team.**
+### [20230710A]
+1. Add PCIe projects "SM2268XT_CMT_QLC"
 ### [20230707A]
 1. Add Micron USB projects "Frey3B"
 ### [20230530A]
