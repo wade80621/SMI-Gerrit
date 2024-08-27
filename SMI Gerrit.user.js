@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20240826A]
+// @version      [20240827A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        http*://rd2gerrit01.siliconmotion.com.tw/
@@ -34,7 +34,7 @@
         // '<a class="menuItem"                     href="#/q/project:&quot;KC600+B17A&quot;" role="menuitem">KC600 B17A</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
-		
+
         // PCIe
         newElement = document.createElement("div");
         newElement.id = "wade_proj_pcie"
@@ -77,28 +77,65 @@
         '<a class="menuItem"                     href="#/q/project:Debug_Tools" role="menuitem">Debug_Tools</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
+
+        // Note
+        newElement = document.createElement("div");
+        newElement.id = "wade_note"
+        newElement.innerHTML = ''+
+        '<details><summary style="margin: 2px 0 1px 8px;"><b>Commit Note</b></summary>'+
+        '<table border="1px" style="margin: 2px 0 1px 20px;">'+
+        '<tbody><tr><td>'+
+        '<h4>Commit Message Rule</h4>'+
+        '<p>ISP: XXXXXX, BootISP: XXXXXX, MPISP: XXXXXX, MTFW: XXXXXX</p>'+
+        '<p>1. XXXXXXXXXXXXXXXXXX（改動描述）<br>'+
+        '&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;CHANGE:（更改的檔案們）<br>'+
+        '&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;TYPE:（詳見下表）<br>'+
+        '&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;TEST CASE:（驗證的測試）<br>'+
+        '&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;IMPACT:（影響的流程）<br>'+
+        '&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;RELATE JIRA:（如果有）<br></p>'+
+        '<table border="1px">'+
+        '<thead><tr><th scope="col">TYPE</th><th scope="col">Descriptor</th></tr></thead>'+
+        '<tbody>'+
+        '<tr><td align="center">Feature</td><td>新增/修改功能。</td></tr>'+
+        '<tr><td align="center">Fix</td><td>修補Bug。</td></tr>'+
+        '<tr><td align="center">Docs</td><td>文件。</td></tr>'+
+        '<tr><td align="center">Style</td><td>格式（不影響程式碼運行的變動：white-space, formatting, missing semi colons, etc）。</td></tr>'+
+        '<tr><td align="center">Refactor</td><td>重構（既不是新增功能，也不是修補Bug的程式碼變動）。</td></tr>'+
+        '<tr><td align="center">Performance</td><td>改善效能、Improve相關的。</td></tr>'+
+        '<tr><td align="center">Test</td><td>增加測試。</td></tr>'+
+        '<tr><td align="center">Chore</td><td>建構程序或輔助工具的變動（Build Code Batch、Tools、Folder Structure）。</td></tr>'+
+        '<tr><td align="center">Revert</td><td>撤銷、回復先前的Commit。</td></tr>'+
+        '</tbody>'+
+        '</table>'+
+        '</td></tr></tbody>'+
+        '</table>'+
+        '</details>';
+        targetElementId.parentNode.insertBefore(newElement, targetElementId);
     }
 })();
 
 /*==================================================================
 Reference Code
 http://bigsec.net/b52/greasemonkey/
-//
-var logo = document.createElement("div");
-logo.innerHTML = '<div style="margin: 0 auto 0 auto; ' +
-    'border-bottom: 1px solid #000000; margin-bottom: 5px; ' +
-    'font-size: small; background-color: #FFFFFF; ' +
-    'color: #0654AC;"><p style="margin: 2px 0 1px 0;"> ' +
-    'My name is wade' +
-    '</p></div>';
-document.body.insertBefore(logo, document.body.firstChild);
-//
+    //
+    var logo = document.createElement("div");
+    logo.innerHTML = '<div style="margin: 0 auto 0 auto; ' +
+        'border-bottom: 1px solid #000000; margin-bottom: 5px; ' +
+        'font-size: small; background-color: #FFFFFF; ' +
+        'color: #0654AC;"><p style="margin: 2px 0 1px 0;"> ' +
+        'My name is wade' +
+        '</p></div>';
+    document.body.insertBefore(logo, document.body.firstChild);
+    //
 
 
-newElement.id = "wade_proj_sata"
-newElement.className = 'linkMenuBar';
-newElement.setAttribute("role", "menubar");
-newElement.roleName="menubar";
-newElement.style.width = "100%";
-newElement.style.height = "100%";
+    newElement.id = "wade_proj_sata"
+    newElement.className = 'linkMenuBar';
+    newElement.setAttribute("role", "menubar");
+    newElement.roleName="menubar";
+    newElement.style.width = "100%";
+    newElement.style.height = "100%";
+
+https://seanacnet.com/html/details-and-summary/
+https://www.w3schools.com/howto/howto_html_table_nested.asp
 ==================================================================*/

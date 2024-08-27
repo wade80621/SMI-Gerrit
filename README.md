@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for Victor team.**
+### [20240827A]
+1. Add "Commit Note"
 ### [20240826A]
 1. Add PCIe project "SM2268XT2_CMT_QLC"
 2. Add USB project ""
