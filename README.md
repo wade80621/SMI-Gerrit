@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for Victor team.**
+### [20240925A]
+1. Add USB project "SM2324_N58R"
 ### [20240827A]
 1. Add "Commit Note"
 ### [20240826A]
