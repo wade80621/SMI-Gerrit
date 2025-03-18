@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20240925A]
+// @version      [20250318A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        http*://rd2gerrit01.siliconmotion.com.tw/
@@ -60,6 +60,7 @@
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
         '<b style="margin: 2px 0 1px 0;">Project Link(USB): </b>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Henley6" role="menuitem">Henley6(2324_B68S)</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Frey3B" role="menuitem">Frey3B(2322_N58R)</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2320_B47T" role="menuitem">HenleyC(2320_B47T)</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2324XT+branch:SM2324%252BN58R" role="menuitem">SM2324_N58R</a>'+
