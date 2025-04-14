@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20250318A]
+// @version      [20250414A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        http*://rd2gerrit01.siliconmotion.com.tw/
@@ -30,8 +30,8 @@
         // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Kinston_OEM" role="menuitem">Kinston_OEM</a>'+
         // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:master" role="menuitem">MX500(2258_B27A)</a>'+
         // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:MX500_B27A+branch:KC600" role="menuitem">KC600(2258_B27)</a>'+
-        // '<a class="menuItem"                     href="#/q/project:ATP_SM2259_B16A" role="menuitem">ATP(2259_B16A)</a>'+
-        // '<a class="menuItem"                     href="#/q/project:&quot;KC600+B17A&quot;" role="menuitem">KC600 B17A</a>'+
+        // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:ATP_SM2259_B16A" role="menuitem">ATP(2259_B16A)</a>'+
+        // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:&quot;KC600+B17A&quot;" role="menuitem">KC600 B17A</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
 
@@ -48,7 +48,7 @@
         // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269xt+branch:SKH_BC901" role="menuitem">SKH_BC901</a>'+
         // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269XT_FE" role="menuitem">SM2269XT_FE(Marco)</a>'+
         // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:XT_ASIC+branch:SM2269" role="menuitem">SM2269XT_ASIC(Marco)</a>'+
-        // '<a class="menuItem"                     href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2(2263_N28)</a>'+
+        // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON_2" role="menuitem">FRAMPTON_2(2263_N28)</a>'+
         // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:FRAMPTON" role="menuitem">FRAMPTON</a>'+
         // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:BlackMore" role="menuitem"><s>BlackMore</s></a>'+
         '</div>';
@@ -60,13 +60,14 @@
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
         '<b style="margin: 2px 0 1px 0;">Project Link(USB): </b>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Henley6" role="menuitem">Henley6(2324_B68S)</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Henley6+branch:Henley5C" role="menuitem">Henley5C(2324_B58R)</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Henley6+branch:master" role="menuitem">Henley6(2324_B68S)</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Frey3B" role="menuitem">Frey3B(2322_N58R)</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2320_B47T" role="menuitem">HenleyC(2320_B47T)</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2324XT+branch:SM2324%252BN58R" role="menuitem">SM2324_N58R</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2324XT" role="menuitem">SM2324XT(Marco)</a>'+
-        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2320XT" role="menuitem">SM2320XT(Marco)</a>'+
-        '<a class="menuItem"                     href="#/q/project:SM2320FE" role="menuitem">SM2320FE(Marco)</a>'+
+        '<a class="menuItem"                     href="#/q/project:SM2324XT+branch:SM2324%252BN58R" role="menuitem">SM2324_N58R</a>'+
+        // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2324XT" role="menuitem">SM2324XT(Marco)</a>'+
+        // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2320XT" role="menuitem">SM2320XT(Marco)</a>'+
+        // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2320FE" role="menuitem">SM2320FE(Marco)</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
 

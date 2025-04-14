@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for Victor team.**
+### [20250414A]
+1. Add USB project "Henley5C"
 ### [20250318A]
 1. Add USB project "Henley6"
 ### [20240925A]
