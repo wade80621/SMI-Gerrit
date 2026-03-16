@@ -1,5 +1,10 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for Victor team.**
+### [20260316A]
+1. Add PCIe project "SM2524_CMT_QLC"
+2. Remove SATA project "KC600(2259_B47)"
+2. Remove PCIe project "Mitchell(2269_N48)", "Mitchell_MTFW"
+2. Remove USB project "Henley5C(2324_B58R)"
 ### [20250815A]
 1. Change "Henley6" order
 ### [20250414A]
@@ -14,7 +19,7 @@
 1. Add PCIe project "SM2268XT2_CMT_QLC"
 2. Add USB project ""
 3. Remove SATA projects "KC600_BiSC5", "Kinston_OEM", "MX500(2258_B27A)", "KC600(2258_B27)", "ATP(2259_B16A)"
-3. Remove PCIe projects "SKH_BC901", "SM2269XT_FE(Marco)", "SM2269XT_ASIC(Marco)", "FRAMPTON_2(2263_N28)"
+4. Remove PCIe projects "SKH_BC901", "SM2269XT_FE(Marco)", "SM2269XT_ASIC(Marco)", "FRAMPTON_2(2263_N28)"
 ### [20230710A]
 1. Add PCIe projects "SM2268XT_CMT_QLC"
 ### [20230707A]
