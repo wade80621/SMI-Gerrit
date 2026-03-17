@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20260316A]
+// @version      [20260317A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        http*://rd2gerrit01.siliconmotion.com.tw/
@@ -42,6 +42,7 @@
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
         '<b style="margin: 2px 0 1px 0;">Project Link(PCIe): </b>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2524_CMT_QLC" role="menuitem">SM2524_CMT_QLC</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2504_CMT_QLC" role="menuitem">SM2504_CMT_QLC</a>'+
         '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2268XT2_CMT_QLC" role="menuitem">SM2268XT2_CMT_QLC</a>'+
         '<a class="menuItem"                     href="#/q/project:SM2268XT_CMT_QLC" role="menuitem">SM2268XT_CMT_QLC</a>'+
         // '<a class="menuItem linkMenuItemNotLast" href="#/q/project:SM2269xt+branch:SKH_BC901" role="menuitem">SKH_BC901</a>'+

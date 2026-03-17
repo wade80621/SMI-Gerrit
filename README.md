@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for Victor team.**
+### [20260317A]
+1. Add PCIe project "SM2504_CMT_QLC"
 ### [20260316A]
 1. Add PCIe project "SM2524_CMT_QLC"
 2. Remove SATA project "KC600(2259_B47)"
