@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SMI Gerrit
 // @namespace    https://github.com/wade80621/SMI-Gerrit
-// @version      [20260317A]
+// @version      [20261020A]
 // @description  Optimize SMI Gerrit, add project link for Victor team.
 // @author       Wade.Yeh
 // @match        http*://rd2gerrit01.siliconmotion.com.tw/
@@ -79,7 +79,8 @@
         newElement.innerHTML = ''+
         '<div class="linkMenuBar" role="menubar" style="width: 100%; height: 100%;">'+
         '<b style="margin: 2px 0 1px 0;">Project Link(Other): </b>'+
-        '<a class="menuItem"                     href="#/q/project:Debug_Tools" role="menuitem">Debug_Tools</a>'+
+        '<a class="menuItem linkMenuItemNotLast" href="#/q/project:Debug_Tools" role="menuitem">Debug_Tools</a>'+
+        '<a class="menuItem"                     href="#/q/project:SM2524+branch:PMC" role="menuitem">SM2524_PMC</a>'+
         '</div>';
         targetElementId.parentNode.insertBefore(newElement, targetElementId);
 

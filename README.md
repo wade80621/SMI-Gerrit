@@ -1,5 +1,7 @@
 # SMI-Gerrit
 **Optimize SMI Gerrit, add project link for Victor team.**
+### [20261020A]
+1. Add Other project "SM2524_PMC"
 ### [20260317A]
 1. Add PCIe project "SM2504_CMT_QLC"
 ### [20260316A]
